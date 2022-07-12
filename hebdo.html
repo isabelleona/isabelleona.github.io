@@ -222,7 +222,61 @@
                     Semaine 10 - <small class="text-muted">Du 4 au 10 juillet 2022</small>
                 </div>
                 <p class="content">
-                    .
+                    Lundi, à la rencontre, nous avons discuté de l'état actuel des apps et Lena nous a laissé savoir qu'il avait un Patrimoine qu'il fallait ajouter dans le JSON patrimoine pour l'activité du mardi, elle nous a envoyé les informations suite à la rencontre.
+                    Nous avons aussi décider de nommer cette version 3.0, tant dans iOS que Android. Par la suite, j'ai aussi upload l'application sur TestFlight et j'ai crée un lien pour testeurs externes afin de pouvoir le partager le lendemain, lors
+                    de l'activité programmée. Apparament l'activité s'est bien déroulé! Ça nous a aussi permir d'avoir du feedback, j'ai recuille dans une liste les commentaire de Marguerite, M. Lapalme, ainsi que quelques miens, et le reste de la semaine
+                    je me suis attaqué au plus grand nombre.
+                </p>
+                <ul>
+                    <li>
+                        [X] Corriger toutes les couleurs du Dark mode
+                    </li>
+                    <li>
+                        [X] Update le tutoriel, images dans le pcloud
+                    </li>
+                    <li>
+                        [X] Update les pins jaunes dans la carte et la liste (#fae800)
+                    </li>
+                    <li>
+                        [X] Update l'icône white_map (Dans le pcloud: Icones -> odj_carte_light/dark.png)
+                    </li>
+                    <li>
+                        [X] Lorsque le titre est trop long, le mettre sur 2 lignes (dans la description seulement)
+                    </li>
+                    <li>
+                        * Ajouter les Patrimoine dans les oeuvres collectionnées/badges (badge géneraux et boroughs)
+                    </li>
+                    <li>
+                        [X] Lorsqu'une information n'est pas diponible, laisser un espace en blanc au lieu d'ajouter un text du genre "no_borough"
+                    </li>
+                    <li>
+                        [X] Remplacer "Découverte du jour" au lieu de "Oeuvre du jour"
+                    </li>
+                    <li>
+                        Mettre à jour les texts d’accompagnement qui font reference a montreal(??)
+                    </li>
+                    <li>
+                        Nouveaux features:
+                        <ul>
+                            <li>
+                                Enlever des photos tests
+                            </li>
+                            <li>
+                                Changer les commentaires sauvegardés
+                            </li>
+                            <li>
+                                Alerte de prise de photo trop loin du site
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    J'ai complété toutes celles qui sont marquées par un [X], et celle marquée avec un "*" et complété, mais avec une légère nuance. À cause de la façon dont la logique de bagges est faite, il n'est pas possible de donner des badges aux oeuvres qui ont déjà
+                    été collectées. En effet, la logique vérifie si une oeuvre qualifie pour un badge au moment où elle est collectée. Pour prendre en consideration toutes les oeuvres déjà collectées, il faudrait changer cette logique, c'est à discuter
+                    avec Lena lors de la prochaine rencontre. Il semble aussi avoir un problème avec la mise à jour du nombre total d'oeuvres collectionnées (apparaissant en haut de la vue des badges). Ce chiffre se met à jour seulement lorsqu'on ferme
+                    et on re-ouvre l'application. Je n'ai pas trouvé la cause à l'origine, mais j'ai rajouté une variable "@State var isDisplayed" dans CollectionHeaderView afin de forcer la vue à update, par contre, ceci n'est pas automatique et donc
+                    ça prends quelques secondes avant de voir le chiffre mis à jour, il y a probablement un moyen plus efficace de le faire, donc c'est à retravailler. Finalement, j'ai upload la version 3.0 et j'ai mis à jour les photos du app preview,
+                    j'ai programmé la publcation pour le 12 et j'ai l'ai remis pour revue.
                 </p>
             </div>
         </div>
