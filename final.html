@@ -1,0 +1,202 @@
+<!-- Auteur: Isabel Leon Arriz  (1050029)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=400, initial-scale=0.5">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Projet MONA - Isabel Leon Arriz</title>
+</head>
+
+<body>
+    <header>
+        <div class="text-center">
+            <img src="logo500px.png" alt="MONA" height="128" />
+            <h2 class="my-3">Isabel Leon Arriz - Été 2022</h2>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hebdo.html">Rapports hebdomanaires</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="final.html">Rapport Final</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled">Ressources</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <div class="mx-5">
+                <h4 class="my-4">
+                    <strong>Introduction</strong>
+                </h4>
+                <div class="sub-header font-weight-bold">
+                    Énoncé du Projet
+                </div>
+                <br>
+                <div>
+                    <p>
+                        "Le projet est un projet de développement d'une application mobile par l'organisme MONA, visant la découverte de l'art public, mené par le Département d'histoire de l'art et d'études cinématographiques, en coopération avec le Département d'informatique
+                        et de recherche opérationnelle . L'organisme collabore conjointement avec le groupe de recherche en histoire de l'art Art et site et la professeure Suzanne Paquet, directrice du département d'histoire de l'art de l'Université de
+                        Montréal."
+                    </p>
+                    <p>
+                        Cette application mobile est une belle opportunité pour que les gens au Québec en découvrent les œuvres d’arts, lieux patrimoniaux et lieux culturels qui sont dans leurs alentours.
+                    </p>
+                </div>
+                <div class="sub-header font-weight-bold" id="sem1">
+                    Mandats du Projet
+                </div>
+                <br>
+                <div>
+                    <p>
+                        Durant la session, j’ai travaillé en tant que développeur iOS utilisant le framework SwiftUI et le langage Swift dans Xcode. </p>
+                    <p>
+                        Le principal mandat était d'adapter l'application à l'ajout des données Patrimoines. Ceci implique connecter la nouvelle base de données Patrimoines, adapter l'interface usager et ajouter toutes les fonctionnalités requises afin que l'application continuer
+                        à bien fonctionner. Cet ajout fut une priorité principalement durant la première partie de la session étant donné que la date de lancement était fixée au 12 juillet.
+                    </p>
+                    <p>
+                        Par la suite, le temps restant fut consacré à améliorer l'interface afin de donner la meilleure expérience usager possible. Pour complémenter, des évaluations et analyses ont aussi été fait afin d'identifier les points à améliorer.
+                    </p>
+                </div>
+                <h4 class="my-4">
+                    <strong>Développement</strong>
+                </h4>
+                <div>
+                    <p>
+                        Ce projet a été la première fois que je développais dans un environnement Apple, c’était quelque chose que je voulais faire depuis quelque temps et j’avais hâte de commencer à me familiariser avec le nouvel langage et IDE. J’ai passé une bonne partie
+                        du début de session à me familiariser avec Swift, Xcode, l’API ainsi qu’à comprendre le code existant. Cela a pris un peu de temps, mais selon moi ça a été très important pour pouvoir travaille plus efficacement par la suite. Le
+                        code était bien commenté et j’ai toujours eu du support pour éclairer mes doutes. Une des plus grandes difficultés a été pour moi de travailler avec l’API. Il y avait quelques inconsistances avec le code existant et donc même en
+                        travaillant avec des JSON en local, il y avait du pré-traitement à faire avant de pouvoir l’utiliser. Cela sans compter que la version 3 de l’API inclut des nouvelles données, et donc il faudra modifier un peu les modèles afin
+                        de pouvoir utiliser ces nouvelles données. À cause qu’il y avait souvent des modifications à l’API je n’ai pas voulu travailler beaucoup d’heures à essayer d’adapter le code parce que je trouvais que ces changements qui étaient
+                        relativement importants n’allaient être que temporaires, et ça n’aurait pas été une façon très efficace de dépenser les heures de travail disponibles.
+                    </p>
+                    <p>
+                        La version 3.0 fut lancée le 12 juillet 2022 et ce fut lors d’un évènement organisé avec la ville de Cote-de-Neige. Ce fut un très bel évènement et, pour moi, ce fut très spécial de voir des gens utiliser l’application sur laquelle j’avais travaillé pendant
+                        des semaines. Cette version était adaptée aux Patrimoines, ces données étaient dans un JSON local appelé patrimoines.json. Ils étaient ajoutes à la carte, à la liste d’œuvres et aux filtres, il y avait aussi beaucoup des changements
+                        d’interface, en voici la liste :
+                    </p>
+                    <ul>
+                        <li>
+                            Adaptation des fiches d’informations aux Patrimoines – ajout du du bouton "Voir plus...”
+                        </li>
+                        <li>
+                            Correction de toutes les couleurs du Dark mode
+                        </li>
+                        <li>
+                            Mise à jour du tutorial
+                        </li>
+                        <li>
+                            Mise à jour de la couleur des pins jaunes dans la carte et la liste (#fae800)
+                        </li>
+                        <li>
+                            Mise à jour l'icône white_map
+                        </li>
+                        <li>
+                            Lorsque le titre est trop long, le mettre sur 2 lignes
+                        </li>
+                        <li>
+                            Dans les fiches d’informations, lorsqu'une information n'est pas disponible, laisser un espace en blanc au lieu d'ajouter un texte du genre "no_borough"
+                        </li>
+                        <li>
+                            Remplacement de "Oeuvre du jour” par "Découverte du jour"
+                        </li>
+                    </ul>
+                    <p>
+                        Suite au lancement de la version 3.0, j’ai commencé à travailler sur un recueil des fonctionnalités de l’application dans le but d’avoir une idée plus claire d’où on était et où on voulait d’en aller. Ceci fut la première version, mais résume assez bien
+                        les fonctionnalités actuelles (en ce moment) de l’application :
+                    </p>
+                    <p style="text-align:center;">
+                        <img src="fig1.png" alt="tableau">
+                    </p>
+                    <p>
+                        Par la suite, le 25 aout 2022, la version 3.1 fut lancée. Cette version avait des modifications aux code de couleurs dans les fiches d’informations (jaune pour les œuvres, mauves pour les lieux et orange pour les patrimoines) et avait des nouvelles données
+                        des œuvres d’art de Laval et de Granby qui ont été ajoutés pour un colloque d’art à Granby et le début d’un partenariat avec la ville de Laval.
+                    </p>
+                    <p>
+                        J’ai aussi commencé à travailler sur la mise à jour de la page d’accueil et qu’elle prenne en considération les Patrimoines et Lieux culturels dans les possibilités de découvertes du jour, par contre, ça prenait plus de temps de prévu et la session a
+                        pris fin avant que je puisse finir.
+                    </p>
+                </div>
+                <h4 class="my-4">
+                    <strong>Conclusions</strong>
+                </h4>
+                <p>
+                    J’ai beaucoup aimé travailler sur ce projet et je suis très contente du résultat! J’ai énormément appris et en plus j’ai eu l’opportunité de mettre en pratique diverses compétences acquises durant les cours du bac. Évidement la capacite d’apprendre un
+                    nouveau langage en peu de temps qu’on a souvent mis en pratique dans divers cours, mais aussi par exemple, j’ai beaucoup utilisé les connaissances apprise dans le cours IFT2905 Interfaces personne-machine en faisant une analyse heuristique
+                    de l'application durant la session et en me préoccupant par les aspect UI.
+                </p>
+                <p>
+                    Je suis aussi maintenant très à l’aise avec Xcode et Swift. J’ai aussi beaucoup appris sur comment travailler avec une quantité importante de données soit en utilisant des JSON ou une API. En effet, ce projet fut une première exposition aux API pour moi.
+                    Ce fut aussi une première expérience pour moi avec le AppStore et l’interface développeur, et je suis maintenant capable de rendre disponible des version test et des nouvelles versions de l’application dessus.
+                </p>
+                <div class="sub-header font-weight-bold" id="sem1">
+                    Vision à futur
+                </div>
+                <br>
+                <p>
+                    Bien que l’application iOS soit bien fonctionnelle, il reste tout de même des points à améliorer. Un tableau collaboratif a été mis en place durant la session afin de garder registre de l’état actuel de l’application, tant iOS qu’Android, ainsi que pour
+                    garder en tête les choses qui sont encore à faire.
+                </p>
+                <p>
+                    Lien au dashboard Miro de fonctionnalités:
+                    <a href="url">https://miro.com/app/board/uXjVOiGjCRw=/ </a>
+                </p>
+                <p style="text-align:center;">
+                    <img src="fig2.png " alt="tableau " style="width: 70%; height: 70% ">
+                </p>
+                <p>
+                    Voici en bref quelques points à travailler au futur :
+                </p>
+                <ul>
+                    <li>
+                        Prendre en considération dans la sélection aléatoire de l’œuvre du jour les lieux culturels et les patrimoines.
+                    </li>
+                    <li>
+                        Utiliser l’API v3 pour collecter les données à afficher
+                    </li>
+                    <li>
+                        Faire un recalcul des badges existantes
+                    </li>
+                    <li>
+                        Effacer des photos tests ou mal prises
+                    </li>
+                    <li>
+                        Mettre à jour des photos dont les œuvres ont changé
+                    </li>
+                    <li>
+                        Signaler des erreurs de localisation
+                    </li>
+                    <li>
+                        Capacité de proposer des œuvres à ajouter, à faire évaluer par des « experts »
+                    </li>
+                    <li>
+                        Changer/mettre à jour les commentaires sauvegardés
+                    </li>
+                    <li>
+                        Alerte de prise de photo trop loin du site
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
